@@ -395,6 +395,1021 @@
           ]
         }
       ]
+    },
+    {
+  "id": "IMP",
+  "nom": "IMP",
+  "nomComplet": "Infant Motor Profile",
+  "version": "Janvier 2021",
+  "scoreMax": null,
+  "scoreType": "pourcentage_par_domaine",
+  "couleur": "#5B8FA8",
+  "domaine": "Posture et motricité",
+  "ages": [3, 6, 9, 12, 18],
+  "lienOfficiel": "http://www.developmentalneurology.com",
+  "lienCotation": "http://www.developmentalneurology.com",
+  "reference": "Hadders-Algra M et al. Dev Med Child Neurol. 2010 · Copyright © 2021 Developmental Neurology, University Medical Center Groningen",
+  "note": "L'IMP évalue 5 domaines distincts exprimés en pourcentage : Variation (V), Adaptabilité (A), Performance (P), Symétrie (S), Fluidité (F). Certains items sont conditionnels (score 0 = non évalué selon item précédent).",
+  "domaines_score": [
+    { "id": "V", "label": "Variation", "couleur": "#5B8FA8" },
+    { "id": "A", "label": "Adaptabilité", "couleur": "#3a7d5c" },
+    { "id": "P", "label": "Performance", "couleur": "#d4813a" },
+    { "id": "S", "label": "Symétrie", "couleur": "#7E9CB5" },
+    { "id": "F", "label": "Fluidité", "couleur": "#6B9E78" }
+  ],
+  "sections": [
+    {
+      "id": "decubitus_dorsal",
+      "label": "Décubitus dorsal",
+      "note": "Items 1 à 21. Si non évalué, aller à l'item 22.",
+      "items": [
+        {
+          "id": "imp_1", "numero": 1,
+          "label": "Contrôle des mouvements de tête",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Ne peut pas contrôler les mouvements de tête" },
+            { "score": 2, "label": "Peut contrôler les mouvements de tête dans une mesure limitée" },
+            { "score": 3, "label": "Peut contrôler les mouvements de tête" }
+          ]
+        },
+        {
+          "id": "imp_2", "numero": 2,
+          "label": "Variation des mouvements de tête",
+          "domaine": "V",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_3", "numero": 3,
+          "label": "Adaptabilité des mouvements de tête",
+          "domaine": "A",
+          "info": "Majorité des mouvements",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_4", "numero": 4,
+          "label": "Position de la tête — prédominance d'un côté",
+          "domaine": "S",
+          "asym": true,
+          "options": [
+            { "score": 1, "label": "Position de tête fortement prédominante d'un côté (D/G)" },
+            { "score": 2, "label": "Position de tête modérément prédominante d'un côté (D/G)" },
+            { "score": 3, "label": "Pas ou légère prédominance d'un côté" }
+          ]
+        },
+        {
+          "id": "imp_5", "numero": 5,
+          "label": "Posture — présence d'un RTAC",
+          "domaine": "V",
+          "info": "Réflexe Tonique Asymétrique du Cou",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "RTAC fréquent ou obligatoire" },
+            { "score": 2, "label": "Pas de RTAC ou RTAC occasionnel non obligatoire" }
+          ]
+        },
+        {
+          "id": "imp_6", "numero": 6,
+          "label": "Posture — présence d'hyperextension de la nuque et du tronc",
+          "domaine": "V",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Hyperextension fréquente ou persistante" },
+            { "score": 2, "label": "Pas d'hyperextension ou rarement" }
+          ]
+        },
+        {
+          "id": "imp_7", "numero": 7,
+          "label": "Comportement manipulatoire des mains et des doigts",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Pas de comportement manipulatoire" },
+            { "score": 2, "label": "Manipule ses vêtements ; mains en ligne médiane, sur les genoux ou pieds ; joue avec les mains à la bouche" }
+          ]
+        },
+        {
+          "id": "imp_8", "numero": 8,
+          "label": "Variation des mouvements des bras",
+          "domaine": "V",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_9", "numero": 9,
+          "label": "Variation des mouvements des doigts",
+          "domaine": "V",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_10", "numero": 10,
+          "label": "Bascule du bassin",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Pas de bascule du bassin" },
+            { "score": 2, "label": "Bascule du bassin, mais pas suffisamment pour que les mains puissent toucher les genoux" },
+            { "score": 3, "label": "Bascule du bassin suffisante pour que les mains puissent toucher les genoux" },
+            { "score": 4, "label": "Les mains jouent avec les pieds" }
+          ]
+        },
+        {
+          "id": "imp_11", "numero": 11,
+          "label": "Variation des mouvements des jambes",
+          "domaine": "V",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_12", "numero": 12,
+          "label": "Variation des mouvements des orteils",
+          "domaine": "V",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_13", "numero": 13,
+          "label": "Retournement du décubitus dorsal vers la position ventrale",
+          "domaine": "P",
+          "asym": true,
+          "options": [
+            { "score": 1, "label": "Pas de tentative de retournement" },
+            { "score": 2, "label": "Mouvements de 'torsion' du bassin, sans rouler sur le côté" },
+            { "score": 3, "label": "Roule sur le côté, unilatéralement (D/G)" },
+            { "score": 4, "label": "Roule sur le côté, bilatéralement" },
+            { "score": 5, "label": "Se retourne unilatéralement en position ventrale (D/G)" },
+            { "score": 6, "label": "Se retourne bilatéralement en position ventrale" }
+          ]
+        },
+        {
+          "id": "imp_14", "numero": 14,
+          "label": "Atteinte, saisie et manipulation d'objets",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "N'atteint pas, ne montre pas de mouvements de pré-atteinte" },
+            { "score": 2, "label": "N'atteint pas, mais montre des mouvements de pré-atteinte" },
+            { "score": 3, "label": "Atteint l'objet mais ne le saisit pas" },
+            { "score": 4, "label": "Atteint, saisit et tient l'objet, mais ne le manipule pas" },
+            { "score": 5, "label": "Atteint, tient et manipule 1 objet" },
+            { "score": 6, "label": "Atteint, tient et manipule 2 objets" },
+            { "score": 7, "label": "Atteint et tient ≥ 3 objets" }
+          ]
+        },
+        {
+          "id": "imp_15", "numero": "15 (A.51)",
+          "label": "Atteinte et manipulation — présence d'asymétrie",
+          "domaine": "S",
+          "info": "Score 0 si item 14 = score 1 (pas de mouvements de pré-atteinte)",
+          "asym": true,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements de pré-atteinte ou d'atteinte (item 14, score 1)" },
+            { "score": 1, "label": "Asymétrie forte — côté le plus atteint : D/G" },
+            { "score": 2, "label": "Asymétrie modérée — côté le plus atteint : D/G" },
+            { "score": 3, "label": "Pas d'asymétrie ou asymétrie légère" }
+          ]
+        },
+        {
+          "id": "imp_16", "numero": 16,
+          "label": "Variation des mouvements d'atteinte des bras",
+          "domaine": "V",
+          "info": "Score 0 si item 14 = score 1 ou 2",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements d'atteinte (item 14, score 1 ou 2)" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_17", "numero": 17,
+          "label": "Adaptabilité des mouvements d'atteinte des bras",
+          "domaine": "A",
+          "info": "Score 0 si item 14 = score 1 ou 2. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements d'atteinte (item 14, score 1 ou 2)" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_18", "numero": 18,
+          "label": "Variation des mouvements de main lors de l'atteinte et manipulation",
+          "domaine": "V",
+          "info": "Score 0 si item 14 = score 1 ou 2",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements d'atteinte (item 14, score 1 ou 2)" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_19", "numero": 19,
+          "label": "Adaptabilité des mouvements de main lors de l'atteinte et manipulation",
+          "domaine": "A",
+          "info": "Score 0 si item 14 = score 1 ou 2. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements d'atteinte (item 14, score 1 ou 2)" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_20", "numero": 20,
+          "label": "Tremblement lors de la pré-atteinte et de l'atteinte",
+          "domaine": "F",
+          "info": "Score 0 si item 14 = score 1",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements de pré-atteinte ou d'atteinte (item 14, score 1)" },
+            { "score": 1, "label": "Fréquemment présent (décrire le type)" },
+            { "score": 2, "label": "Pas ou occasionnellement présent" }
+          ]
+        },
+        {
+          "id": "imp_21", "numero": 21,
+          "label": "Fluidité du comportement moteur en décubitus dorsal",
+          "domaine": "F",
+          "info": "Majorité des mouvements",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Non fluide : rigide, saccadé, flasque/lent, autre" },
+            { "score": 2, "label": "Fluide" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decubitus_ventral",
+      "label": "Décubitus ventral",
+      "note": "Items 22 à 33.",
+      "items": [
+        {
+          "id": "imp_22", "numero": 22,
+          "label": "Élévation de la tête en position ventrale",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Ne lève ni ne tourne la tête" },
+            { "score": 2, "label": "Tourne la tête sur le côté avec un soulèvement minimal" },
+            { "score": 3, "label": "Lève la tête quelques secondes seulement" },
+            { "score": 4, "label": "Maintient la tête levée au moins 10 secondes, difficulté à regarder autour" },
+            { "score": 5, "label": "Maintient la tête levée et regarde autour" }
+          ]
+        },
+        {
+          "id": "imp_23", "numero": 23,
+          "label": "Position de la tête — prédominance d'un côté en ventral",
+          "domaine": "S",
+          "info": "Score 0 si item 22 = score 1",
+          "asym": true,
+          "options": [
+            { "score": 0, "label": "Ne lève pas et ne tourne pas la tête (item 22, score 1)" },
+            { "score": 1, "label": "Position fortement prédominante d'un côté (D/G)" },
+            { "score": 2, "label": "Position modérément prédominante d'un côté (D/G)" },
+            { "score": 3, "label": "Pas ou légère prédominance d'un côté" }
+          ]
+        },
+        {
+          "id": "imp_24", "numero": 24,
+          "label": "Variation des mouvements de tête en ventral",
+          "domaine": "V",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_25", "numero": 25,
+          "label": "Adaptabilité des mouvements de tête en ventral",
+          "domaine": "A",
+          "info": "Majorité des mouvements",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_26", "numero": 26,
+          "label": "Capacité fonctionnelle de la ceinture scapulaire en ventral",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "N'utilise pas les bras et les mains pour lever la tête et le thorax" },
+            { "score": 2, "label": "Utilise les bras mais ne réussit pas à s'appuyer activement sur les coudes et avant-bras" },
+            { "score": 3, "label": "S'appuie sur les coudes et les avant-bras" },
+            { "score": 4, "label": "Soulève la partie supérieure du thorax en s'appuyant sur les mains et bras tendus" }
+          ]
+        },
+        {
+          "id": "imp_27", "numero": 27,
+          "label": "Capacité fonctionnelle des bras et des mains en ventral",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Difficultés à utiliser les bras pour le contrôle postural, n'utilise pas les mains pour d'autres activités" },
+            { "score": 2, "label": "Utilise un ou deux bras pour le contrôle postural, n'utilise pas les mains pour d'autres activités" },
+            { "score": 3, "label": "Utilise un ou deux bras pour le contrôle postural, les mains montrent quelques activités ludiques" },
+            { "score": 4, "label": "Utilise un bras pour le soutien postural, utilise le bras et la main controlatéraux pour l'atteinte et la manipulation" }
+          ]
+        },
+        {
+          "id": "imp_28", "numero": 28,
+          "label": "Posture et mouvements des membres supérieurs en ventral — présence d'asymétrie",
+          "domaine": "S",
+          "info": "Score 0 si item 26 = score 1",
+          "asym": true,
+          "options": [
+            { "score": 0, "label": "Les deux bras restent dans la position imposée par l'examinateur (item 26, score 1)" },
+            { "score": 1, "label": "Asymétrie forte — côté le plus atteint : D/G" },
+            { "score": 2, "label": "Asymétrie modérée — côté le plus atteint : D/G" },
+            { "score": 3, "label": "Pas d'asymétrie ou asymétrie légère" }
+          ]
+        },
+        {
+          "id": "imp_29", "numero": 29,
+          "label": "Progression en ventral — développement du ramper",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Ne montre pas de pivotement ou de ramper" },
+            { "score": 2, "label": "Pivotement" },
+            { "score": 3, "label": "Ramper abdominal, utilise les bras et/ou les jambes" },
+            { "score": 4, "label": "Rampe sur les mains et les genoux, abdomen libre du sol" }
+          ]
+        },
+        {
+          "id": "imp_30", "numero": 30,
+          "label": "Variation des mouvements pré-ramper des jambes",
+          "domaine": "V",
+          "info": "Score 0 si item 29 = score 3 ou 4",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Montre une progression en ventral (item 29, score 3 ou 4)" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_31", "numero": 31,
+          "label": "Retournement de la position ventrale vers le décubitus dorsal",
+          "domaine": "P",
+          "asym": true,
+          "options": [
+            { "score": 0, "label": "Ne montre pas de retournement car préfère se déplacer autrement (ramper, assis, marche)" },
+            { "score": 1, "label": "Pas de tentative de retournement, sans capacité à se déplacer autrement" },
+            { "score": 2, "label": "Roule sur le côté, unilatéralement (D/G)" },
+            { "score": 3, "label": "Roule sur le côté, bilatéralement" },
+            { "score": 4, "label": "Se retourne unilatéralement sur le dos (D/G)" },
+            { "score": 5, "label": "Se retourne bilatéralement sur le dos" }
+          ]
+        },
+        {
+          "id": "imp_32", "numero": 32,
+          "label": "Variation du ramper",
+          "domaine": "V",
+          "info": "Score 0 si item 29 = score 1 ou 2",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne montre pas de progression en ventral (item 29, score 1 ou 2)" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_33", "numero": 33,
+          "label": "Adaptabilité du ramper",
+          "domaine": "A",
+          "info": "Score 0 si item 29 = score 1 ou 2. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne montre pas de progression en ventral (item 29, score 1 ou 2)" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "assis",
+      "label": "Assis",
+      "note": "Items 34 à 46.",
+      "items": [
+        {
+          "id": "imp_34", "numero": 34,
+          "label": "Contrôle des mouvements de tête en position assise",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Ne peut pas contrôler les mouvements de tête" },
+            { "score": 2, "label": "Peut contrôler les mouvements de tête dans une mesure limitée" },
+            { "score": 3, "label": "Peut contrôler les mouvements de tête" }
+          ]
+        },
+        {
+          "id": "imp_35", "numero": 35,
+          "label": "Position de la tête en assis — prédominance d'un côté",
+          "domaine": "S",
+          "asym": true,
+          "options": [
+            { "score": 1, "label": "Position fortement prédominante d'un côté (D/G)" },
+            { "score": 2, "label": "Position modérément prédominante d'un côté (D/G)" },
+            { "score": 3, "label": "Pas ou légère prédominance d'un côté" }
+          ]
+        },
+        {
+          "id": "imp_36", "numero": 36,
+          "label": "Capacité à s'asseoir",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Ne peut pas s'asseoir de façon indépendante" },
+            { "score": 2, "label": "S'assoit avec forte antéflexion du bassin (ventre touchant les cuisses), bras en appui ; ne peut pas se redresser" },
+            { "score": 3, "label": "S'assoit de façon indépendante plus de 5 secondes ; ne peut pas déplacer son poids" },
+            { "score": 4, "label": "S'assoit de façon indépendante, peut déplacer son poids, mais sans ou peu de rotation du tronc" },
+            { "score": 5, "label": "S'assoit de façon indépendante, peut déplacer son poids et faire une rotation du tronc" }
+          ]
+        },
+        {
+          "id": "imp_37", "numero": 37,
+          "label": "Posture du tronc en position assise indépendante",
+          "domaine": "P",
+          "info": "Score 0 si item 36 = score 1 ou 2",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas s'asseoir de façon indépendante (item 36, score 1 ou 2)" },
+            { "score": 1, "label": "Dos rond" },
+            { "score": 2, "label": "Dos droit" }
+          ]
+        },
+        {
+          "id": "imp_38", "numero": 38,
+          "label": "Posture du tronc et des jambes en assis — présence d'asymétrie",
+          "domaine": "S",
+          "info": "Score 0 si item 36 = score 1 ou 2",
+          "asym": true,
+          "options": [
+            { "score": 0, "label": "Ne peut pas s'asseoir de façon indépendante (item 36, score 1 ou 2)" },
+            { "score": 1, "label": "Asymétrie forte — s'effondre du côté D/G" },
+            { "score": 2, "label": "Asymétrie modérée — s'effondre du côté D/G" },
+            { "score": 3, "label": "Pas d'asymétrie ou asymétrie légère" }
+          ]
+        },
+        {
+          "id": "imp_39", "numero": 39,
+          "label": "Posture et mouvements des membres supérieurs en assis — présence d'asymétrie",
+          "domaine": "S",
+          "info": "Score 0 si item 36 = score 2 ou 3",
+          "asym": true,
+          "options": [
+            { "score": 0, "label": "Ne peut s'asseoir que de façon limitée (item 36, score 2 ou 3)" },
+            { "score": 1, "label": "Asymétrie forte — côté le plus atteint : D/G" },
+            { "score": 2, "label": "Asymétrie modérée — côté le plus atteint : D/G" },
+            { "score": 3, "label": "Pas d'asymétrie ou asymétrie légère" }
+          ]
+        },
+        {
+          "id": "imp_40", "numero": 40,
+          "label": "Utilisation des bras pour les activités volontaires",
+          "domaine": "P",
+          "info": "Score 0 si item 36 = score 1 ou 2",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas s'asseoir de façon indépendante (item 36, score 1 ou 2)" },
+            { "score": 1, "label": "Utilise un ou deux bras pour le soutien postural, n'utilise pas les bras pour une activité volontaire" },
+            { "score": 2, "label": "Utilise un bras pour le soutien postural, utilise l'autre bras pour une activité volontaire" },
+            { "score": 3, "label": "Utilise les deux bras pour une activité volontaire, sans soutien postural des bras" }
+          ]
+        },
+        {
+          "id": "imp_41", "numero": 41,
+          "label": "Variation des mouvements en position assise",
+          "domaine": "V",
+          "info": "Score 0 si item 36 = score 1 ou 2",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas s'asseoir de façon indépendante (item 36, score 1 ou 2)" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_42", "numero": 42,
+          "label": "Adaptabilité des mouvements en position assise",
+          "domaine": "A",
+          "info": "Score 0 si item 36 = score 1 ou 2. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas s'asseoir de façon indépendante (item 36, score 1 ou 2)" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_43", "numero": 43,
+          "label": "Passage en position assise",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Ne s'assoit pas et ne se relève pas de façon indépendante" },
+            { "score": 2, "label": "S'assoit ou se relève de façon indépendante" }
+          ]
+        },
+        {
+          "id": "imp_44", "numero": 44,
+          "label": "Variation dans le passage en position assise",
+          "domaine": "V",
+          "info": "Score 0 si item 43 = score 1 (une seule fois ou jamais observé)",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "N'a pas montré ou montré une seule fois le passage assis" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_45", "numero": 45,
+          "label": "Adaptabilité dans le passage en position assise",
+          "domaine": "A",
+          "info": "Score 0 si item 43 = score 1. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "N'a pas montré ou montré une seule fois le passage assis" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_46", "numero": 46,
+          "label": "Déplacement en position assise (fesses)",
+          "domaine": "V",
+          "info": "Score 0 si item 36 = score 1, 2 ou 3",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas s'asseoir de façon indépendante (item 36, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Déplacement sur les fesses, seule stratégie de déplacement (hors marche)" },
+            { "score": 2, "label": "Pas de déplacement sur les fesses, ou présent comme l'une des stratégies" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "debout_marche",
+      "label": "Debout et marche",
+      "note": "Items 47 à 65.",
+      "items": [
+        {
+          "id": "imp_47", "numero": 47,
+          "label": "Capacité à tenir debout",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Ne peut pas tenir debout" },
+            { "score": 2, "label": "Tient debout avec aide" },
+            { "score": 3, "label": "Tient debout de façon indépendante quelques secondes" },
+            { "score": 4, "label": "Tient debout plus de 10 secondes, rotation du tronc minimale seulement" },
+            { "score": 5, "label": "Tient debout de façon indépendante et peut faire une rotation du tronc" }
+          ]
+        },
+        {
+          "id": "imp_48", "numero": 48,
+          "label": "Se lever debout",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Ne peut pas se lever debout" },
+            { "score": 2, "label": "Se met à genoux" },
+            { "score": 3, "label": "Se lève de façon indépendante avec l'aide de meubles" },
+            { "score": 4, "label": "Se lève de façon indépendante sans utiliser de meubles" }
+          ]
+        },
+        {
+          "id": "imp_49", "numero": 49,
+          "label": "Variation dans la façon de se lever debout",
+          "domaine": "V",
+          "info": "Score 0 si item 48 = une seule fois ou jamais",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne s'est pas levé ou s'est levé une seule fois" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_50", "numero": 50,
+          "label": "Adaptabilité dans la façon de se lever debout",
+          "domaine": "A",
+          "info": "Score 0 si item 48 = une seule fois ou jamais. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne s'est pas levé ou s'est levé une seule fois" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_51", "numero": 51,
+          "label": "Marche",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Ne peut pas marcher" },
+            { "score": 2, "label": "Marche avec soutien des deux mains" },
+            { "score": 3, "label": "Marche avec soutien d'une main" },
+            { "score": 4, "label": "Marche de façon indépendante" }
+          ]
+        },
+        {
+          "id": "imp_52", "numero": 52,
+          "label": "Équilibre lors de la marche indépendante",
+          "domaine": "P",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Capacités d'équilibre faibles" },
+            { "score": 2, "label": "Capacités d'équilibre modérées" },
+            { "score": 3, "label": "Bonnes capacités d'équilibre" }
+          ]
+        },
+        {
+          "id": "imp_53", "numero": 53,
+          "label": "Posture et mouvements des bras lors de la marche indépendante",
+          "domaine": "P",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Garde haute ou semi-haute des bras" },
+            { "score": 2, "label": "Posture des bras quelconque" }
+          ]
+        },
+        {
+          "id": "imp_54", "numero": 54,
+          "label": "Posture des membres supérieurs lors de la marche — présence d'asymétrie",
+          "domaine": "S",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3",
+          "asym": true,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Asymétrie forte — côté le plus atteint : D/G" },
+            { "score": 2, "label": "Asymétrie modérée — côté le plus atteint : D/G" },
+            { "score": 3, "label": "Pas d'asymétrie ou asymétrie légère" }
+          ]
+        },
+        {
+          "id": "imp_55", "numero": 55,
+          "label": "Variation des mouvements des bras et mains lors de la marche",
+          "domaine": "V",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3 OU garde haute/semi-haute (item 53, score 1)",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne marche pas de façon indépendante ou garde haute des bras" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_56", "numero": 56,
+          "label": "Adaptabilité des mouvements des bras et mains lors de la marche",
+          "domaine": "A",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3 OU garde haute. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne marche pas de façon indépendante ou garde haute des bras" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_57", "numero": 57,
+          "label": "Variation des mouvements du tronc lors de la marche",
+          "domaine": "V",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_58", "numero": 58,
+          "label": "Adaptabilité des mouvements du tronc lors de la marche",
+          "domaine": "A",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_59", "numero": 59,
+          "label": "Posture et mouvements des jambes lors de la marche — présence d'asymétrie",
+          "domaine": "S",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3",
+          "asym": true,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Asymétrie forte — côté le plus atteint : D/G" },
+            { "score": 2, "label": "Asymétrie modérée — côté le plus atteint : D/G" },
+            { "score": 3, "label": "Pas d'asymétrie ou asymétrie légère" }
+          ]
+        },
+        {
+          "id": "imp_60", "numero": 60,
+          "label": "Variation des mouvements des jambes lors de la marche",
+          "domaine": "V",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_61", "numero": 61,
+          "label": "Adaptabilité des mouvements des jambes lors de la marche",
+          "domaine": "A",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_62", "numero": 62,
+          "label": "Marche talon-pointe lors de la marche indépendante",
+          "domaine": "P",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Pas ou seulement occasionnellement marche talon-pointe" },
+            { "score": 2, "label": "Marche talon-pointe prédominante" }
+          ]
+        },
+        {
+          "id": "imp_63", "numero": 63,
+          "label": "Variation des mouvements du pied lors de la marche",
+          "domaine": "V",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_64", "numero": 64,
+          "label": "Adaptabilité des mouvements du pied lors de la marche",
+          "domaine": "A",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_65", "numero": 65,
+          "label": "Fluidité des mouvements lors de la marche indépendante",
+          "domaine": "F",
+          "info": "Score 0 si item 51 = score 1, 2 ou 3. Majorité des mouvements de marche.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne peut pas marcher de façon indépendante (item 51, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Non fluide : rigide, saccadé, flasque/lent, autre" },
+            { "score": 2, "label": "Large majorité fluide" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prehension_assis",
+      "label": "Atteinte et préhension en assis",
+      "note": "Items 66 à 74.",
+      "items": [
+        {
+          "id": "imp_66", "numero": 66,
+          "label": "Atteinte, saisie et manipulation d'objets en position assise",
+          "domaine": "P",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "N'atteint pas, ne montre pas de mouvements de pré-atteinte" },
+            { "score": 2, "label": "N'atteint pas, mais montre des mouvements de pré-atteinte" },
+            { "score": 3, "label": "Atteint l'objet mais ne le saisit pas" },
+            { "score": 4, "label": "Atteint, saisit et tient l'objet, mais ne le manipule pas" },
+            { "score": 5, "label": "Atteint, tient et manipule 1 objet" },
+            { "score": 6, "label": "Atteint, tient et manipule 2 objets" },
+            { "score": 7, "label": "Atteint et tient ≥ 3 objets" }
+          ]
+        },
+        {
+          "id": "imp_67", "numero": 67,
+          "label": "Pré-atteinte et manipulation en assis — présence d'asymétrie",
+          "domaine": "S",
+          "info": "Score 0 si item 66 = score 1",
+          "asym": true,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements de pré-atteinte ou d'atteinte (item 66, score 1)" },
+            { "score": 1, "label": "Asymétrie forte — côté le plus atteint : D/G" },
+            { "score": 2, "label": "Asymétrie modérée — côté le plus atteint : D/G" },
+            { "score": 3, "label": "Pas d'asymétrie ou asymétrie légère" }
+          ]
+        },
+        {
+          "id": "imp_68", "numero": 68,
+          "label": "Variation des mouvements d'atteinte des bras en assis",
+          "domaine": "V",
+          "info": "Score 0 si item 66 = score 1 ou 2",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements d'atteinte (item 66, score 1 ou 2)" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_69", "numero": 69,
+          "label": "Adaptabilité des mouvements d'atteinte en assis",
+          "domaine": "A",
+          "info": "Score 0 si item 66 = score 1 ou 2. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements d'atteinte (item 66, score 1 ou 2)" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_70", "numero": 70,
+          "label": "Type de saisie en position assise",
+          "domaine": "P",
+          "info": "Score 0 si item 66 = score 1, 2 ou 3",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Ne saisit pas l'objet (item 66, score 1, 2 ou 3)" },
+            { "score": 1, "label": "Saisie palmaire" },
+            { "score": 2, "label": "Saisie radio-palmaire ou en ciseaux" },
+            { "score": 3, "label": "Saisie en pince inférieure" },
+            { "score": 4, "label": "Saisie en pince" }
+          ]
+        },
+        {
+          "id": "imp_71", "numero": 71,
+          "label": "Variation des mouvements de main lors de l'atteinte en assis",
+          "domaine": "V",
+          "info": "Score 0 si item 66 = score 1 ou 2",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements d'atteinte (item 66, score 1 ou 2)" },
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_72", "numero": 72,
+          "label": "Adaptabilité des mouvements de main lors de l'atteinte en assis",
+          "domaine": "A",
+          "info": "Score 0 si item 66 = score 1 ou 2. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements d'atteinte (item 66, score 1 ou 2)" },
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_73", "numero": 73,
+          "label": "Tremblement lors de la pré-atteinte et atteinte en assis",
+          "domaine": "F",
+          "info": "Score 0 si item 66 = score 1",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements de pré-atteinte ou d'atteinte (item 66, score 1)" },
+            { "score": 1, "label": "Fréquemment présent (décrire le type)" },
+            { "score": 2, "label": "Pas ou occasionnellement présent" }
+          ]
+        },
+        {
+          "id": "imp_74", "numero": 74,
+          "label": "Fluidité des mouvements lors de la pré-atteinte et atteinte en assis",
+          "domaine": "F",
+          "info": "Score 0 si item 66 = score 1. Majorité des mouvements.",
+          "asym": false,
+          "options": [
+            { "score": 0, "label": "Pas de mouvements de pré-atteinte ou d'atteinte (item 66, score 1)" },
+            { "score": 1, "label": "Non fluide : rigide, saccadé, flasque/lent, autre" },
+            { "score": 2, "label": "Large majorité fluide" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "label": "Général",
+      "note": "Items 75 à 80.",
+      "items": [
+        {
+          "id": "imp_75", "numero": 75,
+          "label": "Variation de l'expression du visage",
+          "domaine": "V",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Variation insuffisante" },
+            { "score": 2, "label": "Variation suffisante" }
+          ]
+        },
+        {
+          "id": "imp_76", "numero": 76,
+          "label": "Adaptabilité de l'expression du visage",
+          "domaine": "A",
+          "info": "Majorité des mouvements",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Pas de sélection adaptative" },
+            { "score": 2, "label": "Sélection adaptative" }
+          ]
+        },
+        {
+          "id": "imp_77", "numero": 77,
+          "label": "Bavage",
+          "domaine": "V",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Bavage marqué" },
+            { "score": 2, "label": "Pas de bavage ou légèrement présent" }
+          ]
+        },
+        {
+          "id": "imp_78", "numero": 78,
+          "label": "Présence de protrusion stéréotypée de la langue",
+          "domaine": "V",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Oui" },
+            { "score": 2, "label": "Non" }
+          ]
+        },
+        {
+          "id": "imp_79", "numero": 79,
+          "label": "Tremblement général",
+          "domaine": "F",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Fréquemment présent (décrire le type)" },
+            { "score": 2, "label": "Pas ou occasionnellement présent" }
+          ]
+        },
+        {
+          "id": "imp_80", "numero": 80,
+          "label": "Fluidité générale du comportement moteur",
+          "domaine": "F",
+          "info": "Majorité des mouvements",
+          "asym": false,
+          "options": [
+            { "score": 1, "label": "Non fluide : rigide, saccadé, flasque/lent, autre" },
+            { "score": 2, "label": "Fluide" }
+          ]
+        }
+      ]
     }
+  ]
+}
   ]
 }
