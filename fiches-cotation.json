@@ -407,7 +407,7 @@
   "domaine": "Posture et motricité",
   "ages": [3, 6, 9, 12, 18],
   "lienOfficiel": "http://www.developmentalneurology.com",
-  "lienCotation": "http://www.developmentalneurology.com",
+  "lienCotation": "https://infantmotorprofile.com",
   "reference": "Hadders-Algra M et al. Dev Med Child Neurol. 2010 · Copyright © 2021 Developmental Neurology, University Medical Center Groningen",
   "note": "L'IMP évalue 5 domaines distincts exprimés en pourcentage : Variation (V), Adaptabilité (A), Performance (P), Symétrie (S), Fluidité (F). Certains items sont conditionnels (score 0 = non évalué selon item précédent).",
   "domaines_score": [
