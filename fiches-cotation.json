@@ -1,0 +1,400 @@
+{
+  "version": "1.0",
+  "fiches": [
+    {
+      "id": "HINE",
+      "nom": "HINE",
+      "nomComplet": "Hammersmith Infant Neurological Examination",
+      "version": "v 20.12.23",
+      "scoreMax": 78,
+      "couleur": "#2c5f4a",
+      "domaine": "Potentiel neurologique",
+      "ages": [3, 6, 9, 12, 18],
+      "reference": "Haataja L et al. J Peds 1999;135:153-61 · Version française v 20.12.23 : T. Saulnier / G. Bertrand",
+      "interpretation": [
+        { "min": 60, "max": 78, "label": "Profil neurologique rassurant", "couleur": "#3a7d5c" },
+        { "min": 40, "max": 59, "label": "Surveillance recommandée", "couleur": "#7ab648" },
+        { "min": 0,  "max": 39, "label": "Bilan approfondi recommandé", "couleur": "#c0392b" }
+      ],
+      "alertes": [
+        { "type": "asymetrie", "seuil": 5, "message": "Score d'asymétrie ≥ 5 — Risque élevé de PC unilatérale" }
+      ],
+      "sections": [
+        {
+          "id": "nerfs",
+          "label": "Nerfs crâniens",
+          "max": 15,
+          "items": [
+            {
+              "id": "physionomie",
+              "label": "Physionomie du visage",
+              "info": "Observer au repos, en pleurant et en étant stimulé",
+              "asym": false,
+              "options": [
+                { "score": 3, "label": "Sourit ou réagit aux stimuli (ferme les yeux, grimaces)" },
+                { "score": 2, "label": "Ferme les yeux mais pas fermement / visage peu expressif" },
+                { "score": 1, "label": "Visage peu expressif" },
+                { "score": 0, "label": "Visage sans expression — aucune réaction aux stimuli" }
+              ]
+            },
+            {
+              "id": "yeux",
+              "label": "Mouvement des yeux",
+              "info": "",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Mouvement conjugué normal des yeux" },
+                { "score": 2, "label": "Déviation oculaire intermittente ou mouvements anormaux intermittents" },
+                { "score": 1, "label": "Déviation oculaire continue ou mouvements anormaux continus" },
+                { "score": 0, "label": "(non applicable)" }
+              ]
+            },
+            {
+              "id": "visuel",
+              "label": "Réponse visuelle",
+              "info": "Tester la capacité de poursuite d'une cible noir et blanc",
+              "asym": false,
+              "options": [
+                { "score": 3, "label": "Poursuite de l'objet sur un arc complet" },
+                { "score": 2, "label": "Poursuite sur un arc partiel ou asymétrique" },
+                { "score": 1, "label": "Aucune poursuite de l'objet" },
+                { "score": 0, "label": "(non applicable)" }
+              ]
+            },
+            {
+              "id": "auditif",
+              "label": "Réponse auditive",
+              "info": "Tester la réponse à un hochet / clochette",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Réagit aux stimuli depuis les 2 côtés" },
+                { "score": 2, "label": "Réaction douteuse ou asymétrique aux stimuli" },
+                { "score": 1, "label": "Aucune réaction aux stimuli" },
+                { "score": 0, "label": "(non applicable)" }
+              ]
+            },
+            {
+              "id": "succion",
+              "label": "Succion / déglutition",
+              "info": "Observer l'enfant au sein ou biberon. Si plus âgé : demander comment se passe le repas.",
+              "asym": false,
+              "options": [
+                { "score": 3, "label": "Bonne succion et déglutition" },
+                { "score": 2, "label": "Succion–déglutition appauvries" },
+                { "score": 1, "label": "Pas de réflexes de succion ni de déglutition" },
+                { "score": 0, "label": "(non applicable)" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "posture",
+          "label": "Posture",
+          "max": 18,
+          "items": [
+            {
+              "id": "tete_pos",
+              "label": "Tête (position assise)",
+              "info": "Évaluer en position assise",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Droite, dans l'axe" },
+                { "score": 2, "label": "Légère inclinaison latérale, vers l'avant ou vers l'arrière" },
+                { "score": 1, "label": "Inclinaison prononcée latérale, vers l'avant ou vers l'arrière" },
+                { "score": 0, "label": "(non applicable)" }
+              ]
+            },
+            {
+              "id": "tronc",
+              "label": "Tronc (position assise)",
+              "info": "",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Droit" },
+                { "score": 2, "label": "Légère incurvation ou inclinaison latérale" },
+                { "score": 1, "label": "Cyphose très prononcée / inclinaison arrière ou latérale" },
+                { "score": 0, "label": "(non applicable)" }
+              ]
+            },
+            {
+              "id": "bras",
+              "label": "Bras (au repos)",
+              "info": "",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "En position neutre, dans l'axe ou légèrement pliés" },
+                { "score": 2, "label": "Légère rotation interne ou externe / posture dystonique intermittente" },
+                { "score": 1, "label": "Rotation interne ou externe prononcée / posture dystonique / hémiplégique" },
+                { "score": 0, "label": "(non applicable)" }
+              ]
+            },
+            {
+              "id": "mains",
+              "label": "Mains",
+              "info": "",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Mains ouvertes" },
+                { "score": 2, "label": "Pouce en adduction dans la paume ou poing fermé de manière intermittente" },
+                { "score": 1, "label": "Pouce en adduction dans la paume ou poing fermé de manière permanente" },
+                { "score": 0, "label": "(non applicable)" }
+              ]
+            },
+            {
+              "id": "jambes",
+              "label": "Jambes",
+              "info": "En position assise et en position couchée ou debout",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Capable de s'asseoir dos droit jambes tendues ou légèrement fléchies" },
+                { "score": 2, "label": "Assis dos droit mais genoux légèrement fléchis (15-20°)" },
+                { "score": 1, "label": "Position assise dos droit impossible / rotation interne ou externe marquée" },
+                { "score": 0, "label": "Extension ou flexion ou contractures fixées sur les hanches ou genoux" }
+              ]
+            },
+            {
+              "id": "pieds",
+              "label": "Pieds",
+              "info": "En position couchée ou debout",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Centrés en position neutre / orteils entre flexion et extension" },
+                { "score": 2, "label": "Légère rotation interne ou externe" },
+                { "score": 1, "label": "Tendance intermittente à se mettre sur la pointe des pieds / orteils recroquevillés" },
+                { "score": 0, "label": "Rotation interne ou externe marquée / tendance persistante sur la pointe des pieds" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mouvements",
+          "label": "Mouvements",
+          "max": 6,
+          "items": [
+            {
+              "id": "quantite",
+              "label": "Quantité",
+              "info": "Regarder l'enfant allongé sur le dos",
+              "asym": false,
+              "options": [
+                { "score": 3, "label": "Normal" },
+                { "score": 2, "label": "Excessifs, mous et/ou lents" },
+                { "score": 1, "label": "Minime ou absent" },
+                { "score": 0, "label": "(non applicable)" }
+              ]
+            },
+            {
+              "id": "qualite",
+              "label": "Qualité",
+              "info": "Observer dans la motricité volontaire spontanée durant l'évaluation",
+              "asym": false,
+              "options": [
+                { "score": 3, "label": "Libres, alternatifs, sans saccade" },
+                { "score": 2, "label": "Saccadé, léger tremblement" },
+                { "score": 1, "label": "Crampes synchronisées / spasmes / athétose / ataxie / dystonie / myoclonies" },
+                { "score": 0, "label": "(non applicable)" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tonus",
+          "label": "Tonus",
+          "max": 24,
+          "items": [
+            {
+              "id": "foulard",
+              "label": "Manœuvre du Foulard",
+              "info": "Croiser le bras jusqu'à résistance. Position du coude par rapport à la ligne médiane.",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Amplitude normale (coude ne dépasse pas la ligne médiane)" },
+                { "score": 2, "label": "Amplitude intermédiaire" },
+                { "score": 1, "label": "Coude franchement au-delà de la ligne médiane" },
+                { "score": 0, "label": "Coude passe jusqu'à l'épaule opposée" }
+              ]
+            },
+            {
+              "id": "elevation",
+              "label": "Élévation passive de l'épaule",
+              "info": "Lever le bras à côté de la tête. Résistance au coude et à l'épaule.",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Résistance mais surmontable" },
+                { "score": 2, "label": "Résistance difficile à surmonter" },
+                { "score": 1, "label": "Aucune résistance" },
+                { "score": 0, "label": "Résistance non surmontable" }
+              ]
+            },
+            {
+              "id": "prono",
+              "label": "Prono-supination",
+              "info": "Maintenir le bras et effectuer un mouvement de prono-supination. Noter la résistance.",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Pronation et supination complète. Pas de résistance" },
+                { "score": 2, "label": "Résistance surmontable / pronation et supination incomplète" },
+                { "score": 1, "label": "Résistance prononcée" },
+                { "score": 0, "label": "Pronation et supination incomplète. Résistance non surmontable" }
+              ]
+            },
+            {
+              "id": "adducteurs",
+              "label": "Angle des adducteurs",
+              "info": "Tenir les jambes en extension et les emmener en abduction maximale. Noter l'angle.",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Amplitude : 150°–80°" },
+                { "score": 2, "label": "150°–160°" },
+                { "score": 1, "label": "> 170°" },
+                { "score": 0, "label": "< 80°" }
+              ]
+            },
+            {
+              "id": "poplite",
+              "label": "Angle poplité",
+              "info": "Bassin maintenu, fléchir les 2 jambes sur l'abdomen et étendre les genoux jusqu'à résistance.",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Amplitude 150°–100°" },
+                { "score": 2, "label": "150°–160°" },
+                { "score": 1, "label": "~90° ou > 170°" },
+                { "score": 0, "label": "< 80°" }
+              ]
+            },
+            {
+              "id": "dorsiflexion",
+              "label": "Dorsiflexion",
+              "info": "Genou étendu, faire une dorsiflexion de la cheville. Angle entre le pied et la jambe.",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Amplitude 30°–85°" },
+                { "score": 2, "label": "20°–30°" },
+                { "score": 1, "label": "< 20° ou 90°" },
+                { "score": 0, "label": "> 90°" }
+              ]
+            },
+            {
+              "id": "tire_assis",
+              "label": "Tiré assis",
+              "info": "Tirer l'enfant par les poignets vers la position assise (soutenir la tête si nécessaire).",
+              "asym": false,
+              "options": [
+                { "score": 3, "label": "Tête dans l'axe du tronc, contrôle actif" },
+                { "score": 2, "label": "Légère chute de tête en arrière" },
+                { "score": 1, "label": "Tête en arrière" },
+                { "score": 0, "label": "Tête complètement en arrière, pas de contrôle" }
+              ]
+            },
+            {
+              "id": "ventrale",
+              "label": "Suspension ventrale",
+              "info": "Tenir l'enfant horizontalement en suspension ventrale. Position tête, membres et dos.",
+              "asym": false,
+              "options": [
+                { "score": 3, "label": "Tête relevée, dos droit, membres fléchis" },
+                { "score": 2, "label": "Tête à peu près dans l'axe, légère flexion" },
+                { "score": 1, "label": "Tête vers le bas, dos arqué" },
+                { "score": 0, "label": "Tête pendante, corps comme chiffon" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "reflexes",
+          "label": "Réflexes et réactions",
+          "max": 15,
+          "items": [
+            {
+              "id": "protection",
+              "label": "Protection du bras",
+              "info": "Tirer par un bras depuis la position sur le dos, stabiliser la hanche controlatérale. Réaction du bras opposé.",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Bras & main étendus" },
+                { "score": 2, "label": "(intermédiaire)" },
+                { "score": 1, "label": "Bras semi fléchis" },
+                { "score": 0, "label": "Bras entièrement fléchis" }
+              ]
+            },
+            {
+              "id": "vertical",
+              "label": "Suspension verticale",
+              "info": "Tenir l'enfant sous les aisselles, s'assurer que les pieds ne touchent pas le sol.",
+              "asym": false,
+              "options": [
+                { "score": 3, "label": "Coups de pieds symétriques" },
+                { "score": 2, "label": "(intermédiaire)" },
+                { "score": 1, "label": "Coups de pieds asymétriques ou pauvres" },
+                { "score": 0, "label": "Aucun coup de pied ou croise les jambes en ciseaux" }
+              ]
+            },
+            {
+              "id": "bascule",
+              "label": "Bascule latérale",
+              "info": "Tenir par la taille, incliner horizontalement sur les côtés. Décrire : tête – tronc – membres.",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Réaction complète : tête, tronc et membres s'alignent bien" },
+                { "score": 2, "label": "Réaction partielle" },
+                { "score": 1, "label": "Réaction minime" },
+                { "score": 0, "label": "Absence de réaction" }
+              ]
+            },
+            {
+              "id": "parachutes",
+              "label": "Réactions parachutes",
+              "info": "Basculer soudainement vers l'avant. Réaction des bras et symétrie. (après 6 mois)",
+              "asym": false,
+              "options": [
+                { "score": 3, "label": "Extension complète des bras (après 6 mois)" },
+                { "score": 2, "label": "(intermédiaire)" },
+                { "score": 1, "label": "Extension incomplète ou asymétrique (après 6 mois)" },
+                { "score": 0, "label": "Absence de réaction" }
+              ]
+            },
+            {
+              "id": "tendineux",
+              "label": "Réflexes tendineux",
+              "info": "Enfant détendu. Marteau. Biceps, genoux, chevilles.",
+              "asym": true,
+              "options": [
+                { "score": 3, "label": "Facilement élicitables — Biceps, genoux, chevilles" },
+                { "score": 2, "label": "Moyennement vifs — Biceps, genoux, chevilles" },
+                { "score": 1, "label": "Vifs — Biceps, genoux, chevilles" },
+                { "score": 0, "label": "Clonus ou absent — Biceps, genoux, chevilles" }
+              ]
+            }
+          ]
+        }
+      ],
+      "sections_non_scorees": [
+        {
+          "id": "developpement",
+          "label": "Étapes du développement moteur",
+          "note": "Ne compte pas dans le score final",
+          "items": [
+            { "id": "tete", "label": "Contrôle de la tête", "etapes": ["Ne peut pas maintenir droite (< 3 m.)", "Dodeline (jusqu'à 4 m.)", "Tenue droite en permanence (5 m.)"] },
+            { "id": "assis", "label": "Position assise", "etapes": ["Ne maintient pas", "Avec soutien externe aux hanches (4 m.)", "Seul avec soutien (6 m.)", "Position assise stable (7 m.)", "Pivote (8 m.)"] },
+            { "id": "prehension", "label": "Préhension volontaire", "etapes": ["Aucune préhension", "Utilise toute la main", "Index et pouce mais préhension immature", "Préhension en pince"] },
+            { "id": "coups_pied", "label": "Coups de pied", "etapes": ["MI décollés vers le haut (3 m.)", "Touche ses jambes (4-5 m.)", "Touche ses orteils (5-6 m.)"] },
+            { "id": "retourner", "label": "Se retourner", "etapes": ["Ne se retourne pas", "Sur le côté (4 m.)", "Ventre-dos ou dos-ventre (6 m.)", "Dos-ventre ET ventre-dos (7 m.)"] },
+            { "id": "ramper", "label": "Ramper", "etapes": ["Ne lève pas la tête", "Appui sur les coudes (3 m.)", "Appui sur les mains bras tendus (4-5 m.)", "Rampe à plat (8 m.)", "Quatre pattes (10 m.)"] },
+            { "id": "debout", "label": "Tenir debout", "etapes": ["Ne porte pas son poids", "Porte son poids sur les MI (4-5 m.)", "Avec soutien (8 m.)", "Sans soutien (12 m.)"] },
+            { "id": "marche", "label": "Marcher", "etapes": ["Rebondit (6 m.)", "Marche en prenant appui (12 m.)", "Marche (15 m.)"] }
+          ]
+        },
+        {
+          "id": "comportement",
+          "label": "Comportement",
+          "note": "Ne compte pas dans le score final",
+          "items": [
+            { "id": "eveil", "label": "État d'éveil", "etapes": ["Impossible à réveiller", "Somnolent", "Dort mais facilement éveillable", "Éveillé mais pas d'intérêt", "Intérêt maintenu"] },
+            { "id": "emotionnel", "label": "État émotionnel", "etapes": ["Irritable, inconsolable", "Irritable, consolable", "Irritable si on l'approche", "Ni heureux ni malheureux", "Heureux et souriant"] },
+            { "id": "social", "label": "Interactions sociales", "etapes": ["Évitant, retiré", "Hésitant", "Accepte d'être approché", "Amical"] }
+          ]
+        }
+      ]
+    }
+  ]
+}
